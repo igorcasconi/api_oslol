@@ -1,11 +1,9 @@
-const express = require('express');
+import express from 'express';
+import HomeController from './controllers/data-site/home/HomeController'
 const routes = express.Router();
 
+const homeController = new HomeController();
 
-routes.get('/', (req,res) => {
-  return res.send({
-    info: 'API OSLOL'
-  });
-});
+routes.get('/list-news', homeController.listNews)
 
-module.exports = routes;
+export default routes;
