@@ -2,13 +2,12 @@ import dotenv from 'dotenv'
 import express from 'express';
 import cors from 'cors'
 import bodyParser from 'body-parser'
-import http from 'http'
 
 import routes from './routes';
 
 dotenv.config({path: '../.env'});
 const app = express();
-const port = 5000
+const port = process.env.PORT || 5000
 const host = '0.0.0.0';
 
 app.use(bodyParser.urlencoded({
@@ -20,8 +19,6 @@ app.use(express.json());
 app.use(routes);
 app.set('keySecret', process.env.PRIVATE_KEY);
 
-const server = http.createServer(app);
-
-server.listen(port, host, () => {
+app.listen(port, host, () => {
   console.log('Aplicação rodando na porta 5000')
 });
