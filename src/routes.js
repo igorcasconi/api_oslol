@@ -9,6 +9,6 @@ const homeController = new HomeController();
 const loginController = new LoginController();
 
 routes.get('/list-news', homeController.listNews)
-routes.get('/login', loginController.authenticate)
+routes.post('/login', loginController.authenticate)
 
 export default routes;
