@@ -5,7 +5,7 @@ export default class UploadController {
   uploadImages (req, res) {
     const ftp = new PromiseFtp();
     const sizeMaxFile = 20000000;
-
+    
     const { buffer: bufferFile, originalname: fileName, size } = req.file;
     const pathDestination = req.body.path;
 
