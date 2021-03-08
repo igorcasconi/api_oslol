@@ -22,4 +22,13 @@ export default class TeamController {
     return res.status(200).json({ success: true });
 
   }
+
+  async listTeamsOptions (req, res) {
+    
+    const query = await db('fl_teams').select('idTeam', 'name');
+
+    if (!query) return res.status(400).json({ error: 'Nenhum time encontrado'});
+
+    return res.status(200).json(query);
+  }
 }
