@@ -22,11 +22,14 @@ const upload = multer();
 // Routes to ControlPanel
 routes.get('/list-news', verifyJWT, homeController.listNews)
 routes.get('/list-teams-options', verifyJWT, teamController.listTeamsOptions)
+routes.get('/list-news-cp', verifyJWT, newsController.listNewsCP)
 
 routes.post('/login', loginController.authenticate)
 routes.post('/upload-images', verifyJWT, upload.single('file'), uploadController.uploadImages)
 routes.post('/new-team', verifyJWT, teamController.newTeam)
 routes.post('/add-news', verifyJWT, newsController.addNews)
 routes.post('/add-player', verifyJWT, playerController.newPlayer)
+
+routes.delete('/delete-news-cp', verifyJWT, newsController.deleteNews)
 
 export default routes;
