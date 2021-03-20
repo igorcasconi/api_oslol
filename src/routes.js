@@ -19,10 +19,10 @@ const newsController = new NewsController();
 const playerController = new PlayerController();
 const upload = multer();
 
-// Routes to ControlPanel
 routes.get('/list-news', verifyJWT, homeController.listNews)
 routes.get('/list-teams-options', verifyJWT, teamController.listTeamsOptions)
 routes.get('/list-news-cp', verifyJWT, newsController.listNewsCP)
+routes.get('/list-teams-cp', verifyJWT, teamController.listTeamsCP)
 
 routes.post('/login', loginController.authenticate)
 routes.post('/upload-images', verifyJWT, upload.single('file'), uploadController.uploadImages)
@@ -31,5 +31,6 @@ routes.post('/add-news', verifyJWT, newsController.addNews)
 routes.post('/add-player', verifyJWT, playerController.newPlayer)
 
 routes.delete('/delete-news-cp', verifyJWT, newsController.deleteNews)
+routes.delete('/delete-team-cp', verifyJWT, teamController.deleteTeam)
 
 export default routes;
