@@ -15,7 +15,7 @@ export default class TeamController {
 
   async newTeam (req, res) {
 
-    const filePathSubmit = 'images/teams'
+    const filePathSubmit = 'http://oeslol.cf/images/teams'
 
     if (!req.body) return res.status(400).json({ error: 'Sem dados para ser gravados!'})
 
