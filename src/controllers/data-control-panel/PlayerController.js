@@ -37,4 +37,38 @@ export default class TeamController {
 
     return res.status(200).json(query);
   }
+
+  async listPlayersCP (req, res) {
+    
+    const { page } = req.query;
+    const currentPage = parseInt(page) || 1;
+
+    const queryTotalPages = await db.from(table).count('idPlayer', {as: 'total'});
+
+    if (!queryTotalPages) return res.status(200).json({ message: 'Não possui notícias'});
+    
+    const totalRows =  queryTotalPages[0].total;
+    const calcTotalPages = Math.ceil(totalRows / 10);
+    const countItems = (currentPage * 10) - 10;
+
+    const query = await db.from(table)
+    .join('fl_teams', 'fl_players.idTeam', 'fl_teams.idTeam')
+    .select('fl_players.idPlayer', 'fl_players.nickname', {playerName: 'fl_players.name'}, {teamName: 'fl_teams.name'})
+    .limit(10).offset(countItems);
+
+    if (!query) return res.status(400).json({ error: 'Ocorreu um erro ao buscar as notícias' });
+
+    return res.status(200).json({ data: query, page: currentPage, totalPages: calcTotalPages, total: totalRows });
+    
+  }
+
+  async deletePlayer (req, res) {
+    const { id } = req.query;
+
+    if (!id) return res.status(400).json({error: 'Não foi enviado o id para exclusão'});
+
+    await db(table).where('idPlayer', id).del();
+
+    return res.status(200).json({success: true});
+  }
 }
