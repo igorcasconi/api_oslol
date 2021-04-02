@@ -21,7 +21,12 @@ const playerController = new PlayerController();
 const championshipController = new ChampionshipController();
 const upload = multer();
 
-routes.get('/list-news', verifyJWT, homeController.listNews)
+// request routes
+routes.get('/featured-news', homeController.featuredNewsHome)
+routes.get('/last-championships', homeController.lastChampionships)
+routes.get('/new-teams-added', homeController.newTeamsAdded)
+
+// request routes CP
 routes.get('/list-teams-options', verifyJWT, teamController.listTeamsOptions)
 routes.get('/list-news-cp', verifyJWT, newsController.listNewsCP)
 routes.get('/list-teams-cp', verifyJWT, teamController.listTeamsCP)
