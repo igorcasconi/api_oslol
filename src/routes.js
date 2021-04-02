@@ -27,6 +27,7 @@ routes.get('/list-news-cp', verifyJWT, newsController.listNewsCP)
 routes.get('/list-teams-cp', verifyJWT, teamController.listTeamsCP)
 routes.get('/list-player-options', verifyJWT, playerController.listTeamsOptions)
 routes.get('/list-championship-cp', verifyJWT, championshipController.listChampionshipCP)
+routes.get('/list-players-cp', verifyJWT, playerController.listPlayersCP)
 
 routes.post('/login', loginController.authenticate)
 routes.post('/upload-images', verifyJWT, upload.single('file'), uploadController.uploadImages)
@@ -38,5 +39,6 @@ routes.post('/add-championship', verifyJWT, championshipController.createChampio
 routes.delete('/delete-news-cp', verifyJWT, newsController.deleteNews)
 routes.delete('/delete-team-cp', verifyJWT, teamController.deleteTeam)
 routes.delete('/delete-championship-cp', verifyJWT, championshipController.deleteChampionship)
+routes.delete('/delete-player-cp', verifyJWT, playerController.deletePlayer)
 
 export default routes;
