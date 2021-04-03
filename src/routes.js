@@ -9,10 +9,13 @@ import TeamController from './controllers/data-control-panel/TeamController'
 import NewsController from './controllers/data-control-panel/NewsController'
 import PlayerController from './controllers/data-control-panel/PlayerController'
 import ChampionshipController from './controllers/data-control-panel/ChampionshipController'
+import NewsSiteController from './controllers/data-site/news/NewsSiteController'
 
 const routes = express.Router();
 
 const homeController = new HomeController();
+const newsSiteController = new NewsSiteController();
+
 const loginController = new LoginController();
 const uploadController = new UploadController();
 const teamController = new TeamController();
@@ -25,6 +28,7 @@ const upload = multer();
 routes.get('/featured-news', homeController.featuredNewsHome)
 routes.get('/last-championships', homeController.lastChampionships)
 routes.get('/new-teams-added', homeController.newTeamsAdded)
+routes.get('/list-news', newsSiteController.listNews)
 
 // request routes CP
 routes.get('/list-teams-options', verifyJWT, teamController.listTeamsOptions)
