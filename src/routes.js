@@ -11,11 +11,13 @@ import PlayerController from './controllers/data-control-panel/PlayerController'
 import ChampionshipController from './controllers/data-control-panel/ChampionshipController'
 import NewsSiteController from './controllers/data-site/news/NewsSiteController'
 import TeamsSiteController from './controllers/data-site/teams/TeamsSiteController'
+import PlayersSiteController from './controllers/data-site/players/PlayersSiteController'
 
 const routes = express.Router();
 
 const homeController = new HomeController();
 const newsSiteController = new NewsSiteController();
+const playerSiteController = new PlayersSiteController();
 
 const loginController = new LoginController();
 const uploadController = new UploadController();
@@ -32,6 +34,7 @@ routes.get('/last-championships', homeController.lastChampionships)
 routes.get('/new-teams-added', homeController.newTeamsAdded)
 routes.get('/list-news', newsSiteController.listNews)
 routes.get('/list-teams', teamsSiteController.listTeams)
+routes.get('/list-players', playerSiteController.playersList)
 
 // request routes CP
 routes.get('/list-teams-options', verifyJWT, teamController.listTeamsOptions)
