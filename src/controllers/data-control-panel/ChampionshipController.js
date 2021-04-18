@@ -23,7 +23,7 @@ export default class ChampionshipController {
     
     if (selectedTeams.length > 0) {
       selectedTeams.forEach(async (items) => {
-        await db('fl_teams_championships').insert({idTeam: items.idTeam, idChampionship: id});
+        await db('fl_teams_championships').insert({idTeam: items.idTeam, idChampionship: id, victorys: 0, defeats: 0});
       });
     }
 
