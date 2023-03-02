@@ -21,6 +21,6 @@ app.use(express.json());
 app.use(routes);
 app.set("keySecret", process.env.PRIVATE_KEY);
 
-app.listen(port, () => {
+app.listen(port, host, () => {
   console.log(`Aplicação rodando na porta ${port}`);
 });

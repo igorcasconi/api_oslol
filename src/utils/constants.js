@@ -87,114 +87,6 @@ export const databaseUniversity = [
     courseware: course.find((course) => course.name === "Administração"),
   },
   {
-    studentName: "Jonas Reltersinger Costa",
-    ra: "602221",
-    password: "0005",
-    photo:
-      "https://cdn.discordapp.com/attachments/763150414668496918/933531165997015121/WhatsApp_Image_2022-01-18_at_15.00.59.png",
-    course: "Sistemas de Informação",
-    semester: "4A-D/Noturno",
-    courseware: course.find(
-      (course) => course.name === "Sistemas de Informação"
-    ),
-  },
-  {
-    studentName: "Joaquim Caetano Ravanhani",
-    ra: "623232",
-    password: "0006",
-    photo:
-      "https://media.discordapp.net/attachments/763150414668496918/933882359407845426/WhatsApp_Image_2022-01-20_at_21.16.12.jpeg?width=779&height=1055",
-    course: "Sistemas de Informação",
-    semester: "4A-D/Noturno",
-    courseware: course.find(
-      (course) => course.name === "Sistemas de Informação"
-    ),
-  },
-  {
-    studentName: "João Marcos de Souza",
-    ra: "551125",
-    password: "1125",
-    photo:
-      "https://cdn.discordapp.com/attachments/763150414668496918/934201513583190086/WhatsApp_Image_2022-01-21_at_18.36.45.jpeg",
-    course: "Administração",
-    semester: "4A-S/Noturno",
-    courseware: course.find((course) => course.name === "Administração"),
-  },
-  {
-    studentName: "Stéfanny Virgínia Panágio Alves",
-    ra: "602732",
-    password: "2732",
-    photo:
-      "https://cdn.discordapp.com/attachments/763150414668496918/934401329001029632/WhatsApp_Image_2022-01-21_at_23.05.29.jpeg",
-    course: "Administração",
-    semester: "4A-S/Noturno",
-    courseware: course.find((course) => course.name === "Administração"),
-  },
-  {
-    studentName: "Vinicius Treymann Franco",
-    ra: "629333",
-    password: "7000",
-    photo:
-      "https://cdn.discordapp.com/attachments/763150414668496918/943892236083548240/WhatsApp_Image_2022-02-15_at_14.31.16.jpeg",
-    course: "Sistemas de Informação",
-    semester: "4A-D/Noturno",
-    courseware: course.find(
-      (course) => course.name === "Sistemas de Informação"
-    ),
-  },
-  {
-    studentName: "Mateus de Carvalho Belam",
-    ra: "601544",
-    password: "7444",
-    photo:
-      "https://cdn.discordapp.com/attachments/763150414668496918/945695456086876190/WhatsApp_Image_2022-02-20_at_16.36.54.jpeg",
-    course: "Administração",
-    semester: "4A-S/Noturno",
-    courseware: course.find((course) => course.name === "Administração"),
-  },
-  {
-    studentName: "Caio Vinícius Silva Moraes",
-    ra: "610704",
-    password: "1103",
-    photo:
-      "https://cdn.discordapp.com/attachments/763150414668496918/946062445737291846/WhatsApp_Image_2022-02-23_at_10.32.27.jpeg",
-    course: "Administração",
-    semester: "5A-S/Noturno",
-    courseware: course.find((course) => course.name === "Administração"),
-  },
-  {
-    studentName: "Mayra Mayumi Ocampo Ishida",
-    ra: "618999",
-    password: "0006",
-    photo:
-      "https://cdn.discordapp.com/attachments/763150414668496918/946117115419689030/WhatsApp_Image_2022-02-23_at_13.45.02.jpeg",
-    course: "Administração",
-    semester: "4A-S/Noturno",
-    courseware: course.find((course) => course.name === "Administração"),
-  },
-  {
-    studentName: "Aline Airi Shimizu",
-    ra: "618787",
-    password: "0006",
-    photo:
-      "https://cdn.discordapp.com/attachments/763150414668496918/946527572840296498/WhatsApp_Image_2022-02-24_at_17.09.35.jpeg",
-    course: "Administração",
-    semester: "4A-S/Noturno",
-    courseware: course.find((course) => course.name === "Administração"),
-  },
-  {
-    studentName: "Lucas Matoso Ferreira de Castro",
-    ra: "611899",
-    password: "9000",
-    photo:
-      "https://cdn.discordapp.com/attachments/763150414668496918/951303345761583194/WhatsApp_Image_2022-03-09_at_14.11.13.jpeg",
-    course: "Sistemas de Informação",
-    semester: "4A-D/Noturno",
-    courseware: course.find(
-      (course) => course.name === "Sistemas de Informação"
-    ),
-  },
-  {
     studentName: "Nicole Camacho Dejuste",
     ra: "619889",
     password: "0001",
@@ -205,11 +97,31 @@ export const databaseUniversity = [
     courseware: course.find((course) => course.name === "Administração"),
   },
   {
-    studentName: "Rafaela Monteiro Carvalho",
-    ra: "728898",
+    studentName: "Ana Julia Rossigalli Bolfi",
+    ra: "556324",
     password: "0001",
     photo:
-      "https://cdn.discordapp.com/attachments/763150414668496918/990010493534085150/WhatsApp_Image_2022-06-22_at_16.53.36.jpeg",
+      "https://cdn.discordapp.com/attachments/763150414668496918/1240012163528130732/348592750_802162394575420_8001417418584468666_n.jpeg?ex=664502d2&is=6643b152&hm=e23ba09d806d0c208aadf2795a8371e05943e274658d166aea5d7af61cb63094&",
+    course: "Administração",
+    semester: "4A-S/Noturno",
+    courseware: course.find((course) => course.name === "Administração"),
+  },
+  {
+    studentName: "Jessica Chiozini",
+    ra: "556325",
+    password: "0001",
+    photo:
+      "https://cdn.discordapp.com/attachments/763150414668496918/1241415663973564558/81ff7cae-39f9-41c4-8047-4f03372de6e1.jpg?ex=664a1dee&is=6648cc6e&hm=bd6ae3ead50188f1888cebe303a223441752c54da42364ae50f4f7a97b152643&",
+    course: "Administração",
+    semester: "4A-S/Noturno",
+    courseware: course.find((course) => course.name === "Administração"),
+  },
+  {
+    studentName: "Victor Alves Justino",
+    ra: "556326",
+    password: "0001",
+    photo:
+      "https://cdn.discordapp.com/attachments/763150414668496918/1306637703839879189/PHOTO-2024-11-14-12-09-27.jpg?ex=673764b0&is=67361330&hm=416521fb1054d58d198c841ba835d8bf3d70ccd303a17c8419a9ce110a89fbe3&",
     course: "Administração",
     semester: "4A-S/Noturno",
     courseware: course.find((course) => course.name === "Administração"),
