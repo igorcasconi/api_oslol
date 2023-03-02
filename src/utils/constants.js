@@ -87,16 +87,14 @@ export const databaseUniversity = [
     courseware: course.find((course) => course.name === "Administração"),
   },
   {
-    studentName: "Jonas Reltersinger Costa",
+    studentName: "Natália de Souza",
     ra: "602221",
     password: "0005",
     photo:
-      "https://cdn.discordapp.com/attachments/763150414668496918/933531165997015121/WhatsApp_Image_2022-01-18_at_15.00.59.png",
-    course: "Sistemas de Informação",
-    semester: "4A-D/Noturno",
-    courseware: course.find(
-      (course) => course.name === "Sistemas de Informação"
-    ),
+      "https://cdn.discordapp.com/attachments/763150414668496918/1171820873100034128/Capture-2023-11-08-113701.png?ex=655e123b&is=654b9d3b&hm=af16b25710e425188511b0f98c5224c68c7d8500bf3dadf5b054d6be83d78c6a&",
+    course: "Administração",
+    semester: "4A-S/Noturno",
+    courseware: course.find((course) => course.name === "Administração"),
   },
   {
     studentName: "Joaquim Caetano Ravanhani",
@@ -210,6 +208,26 @@ export const databaseUniversity = [
     password: "0001",
     photo:
       "https://cdn.discordapp.com/attachments/763150414668496918/990010493534085150/WhatsApp_Image_2022-06-22_at_16.53.36.jpeg",
+    course: "Administração",
+    semester: "4A-S/Noturno",
+    courseware: course.find((course) => course.name === "Administração"),
+  },
+  {
+    studentName: "Lucas Waitman Micheleti",
+    ra: "570753",
+    password: "2554",
+    photo:
+      "https://media.discordapp.net/attachments/763150414668496918/1111080526514769950/WhatsApp_Image_2023-05-18_at_12.13.49.jpeg",
+    course: "Administração",
+    semester: "4A-S/Noturno",
+    courseware: course.find((course) => course.name === "Administração"),
+  },
+  {
+    studentName: "Gustavo Araujo Licerro",
+    ra: "556323",
+    password: "0001",
+    photo:
+      "https://media.discordapp.net/attachments/763150414668496918/1126878459407376494/596001db-deb2-43a0-8ef0-c5182f043537.jpg?width=864&height=1250",
     course: "Administração",
     semester: "4A-S/Noturno",
     courseware: course.find((course) => course.name === "Administração"),
